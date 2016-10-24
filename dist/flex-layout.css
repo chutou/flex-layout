@@ -483,6 +483,7 @@
   .flex-sm-show {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
+    display: -ms-flex !important;
     display: flex !important;
   }
 }
