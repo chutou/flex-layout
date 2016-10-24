@@ -1,12 +1,17 @@
-#flex-layout
+#css-flex-layout
 
 基于flexbox的栅格化布局库，提供更直观、丰富的布局方式。<br>
 
 [文档演示](https://github.com/chutou/flex-layout/example/index.html)
 
+#npm install
+```
+	npm install css-flex-layout
+```
+
 #优势
 
-flex-layout解决了css布局的不少问题:
+css-flex-layout解决了css布局的不少问题:
 
 * 应用一个class就可以垂直居中。
 * 轻松实现多栏同高。
@@ -18,7 +23,7 @@ flex-layout解决了css布局的不少问题:
 
 #概述
 
-与传统的栅格化一样，flex-layout基于容器(相当于Bootstrap的row) 和栅格(相当于Bootstrap的column) 来布局:
+与传统的栅格化一样，css-flex-layout基于容器(相当于Bootstrap的row) 和栅格(相当于Bootstrap的column) 来布局:
 
 * [容器]有两种：
   flex-column: 容器里的[栅格]以横向排列，与传统栅格化的row一样

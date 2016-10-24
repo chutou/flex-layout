@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>flex-layout</title>
+	<title>css-flex-layout</title>
 	<link rel="stylesheet" href="dist/flex-layout.css">
 	<link rel="stylesheet" href="example/layout.css">
 	<link rel="stylesheet" href="example/index.css">
@@ -11,7 +11,7 @@
 	<div class="m-container flex-row">
 		<div class="m-header flex-column flex-middle">
 			<h1 class="logo">
-				<a href="https://github.com/chutou/flex-layout">Flex-Layout</a>
+				<a href="https://github.com/chutou/flex-layout">Css-flex-Layout</a>
 			</h1>
 			<small class="subtitle">基于flexbox的栅格化布局库，提供更直观、丰富的布局方式</small>
 			<div class="menu">
@@ -22,7 +22,7 @@
 			<div class="m-sidebar">
 				<ul class="m-nav">
 					<li class="active">
-						<a href="#summary">flex-layout 概述</a>
+						<a href="#summary">css-flex-layout 概述</a>
 					</li>
 					<li>
 						<a href="#usage">Usage 用法</a>
@@ -37,8 +37,8 @@
 			</div>
 			<div class="m-main">
 				<div id="summary" class="panel">
-					<h2>flex-layout</h2>
-					<p>flex-layout基于12个栅格布局，与传统栅格化的使用方式类同，但提供了更直观、丰富的布局方式。</p>
+					<h2>css-flex-layout</h2>
+					<p>css-flex-layout基于12个栅格布局，与传统栅格化的使用方式类同，但提供了更直观、丰富的布局方式。</p>
 					<div class="demo demo1">
 						<div class="flex-column">
 							<div class="flex-item-12">flex-item-12</div>
@@ -60,7 +60,7 @@
 				</div>
 				<div class="panel">
 					<h2>概述</h2>
-					<p>与传统的栅格化一样，flex-layout基于[容器] (相当于Bootstrap的row) 和[栅格] (相当于Bootstrap的column) 来布局:</p>
+					<p>与传统的栅格化一样，css-flex-layout基于[容器] (相当于Bootstrap的row) 和[栅格] (相当于Bootstrap的column) 来布局:</p>
 					<ol>
 						<li>[容器]有两种：
 							<p>flex-column: 容器里的[栅格]以横向排列，与传统栅格化的row一样<br>flex-row: 容器里的[栅格]以竖向排列，就像header、content、footer的排列一样</p>
@@ -68,15 +68,15 @@
 						<li>通常，只有[栅格]可以直接放在[容器]中，而你的内容应该放在[栅格]里。但这不是必须的，直接把内容放在[容器]里也没问题。</li>
 						<li>如果一个[容器]里包含的[栅格]超过12格，多出的部分将另起一行。</li>
 						<li>IE的话只兼容IE10+，其他主流浏览器都支持，具体可以看：<a href="http://caniuse.com/#search=flex" target="_blank">兼容性</a></li>
-						<li>Flexbox有主轴，副轴的概念，flex-layout已经封装好了，你不需要懂得flexbox，也无需针对不同轴使用不同的class。<br>
+						<li>Flexbox有主轴，副轴的概念，css-flex-layout已经封装好了，你不需要懂得flexbox，也无需针对不同轴使用不同的class。<br>
 							不过，如果你对Flexbox有所了解的话，用起来会更顺手，推荐阮一峰的<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">Flex 布局教程</a>
 						</li>
-						<li>与Bootstrap等栅格化不同的是：flex-layout不需要container，栅格本身不自带padding。</li>
+						<li>与Bootstrap等栅格化不同的是：css-flex-layout不需要container，栅格本身不自带padding。</li>
 					</ol>
 				</div>
 				<div class="panel">
 					<h2>优势</h2>
-					<p>flex-layout解决了css布局的不少问题，这里所说的大多在下面的Example里可以看到:</p>
+					<p>css-flex-layout解决了css布局的不少问题，这里所说的大多在下面的Example里可以看到:</p>
 					<ol>
 						<li>应用一个class就可以垂直居中。</li>
 						<li>轻松实现多栏同高。</li>
@@ -112,7 +112,7 @@
 							<div class="flex-item-4 flex-offset-4">flex-item-4, flex-offset-4</div>
 						</div>
 						<div class="demo flex-column">
-							<div class="flex-item-4 flex-offset-8">flex-item-4, flex-offset-8</div>
+							<div class="flex-item-4 flex-offset-4">flex-item-4, flex-offset-4</div>
 						</div>
 					</div>
 					<div class="box">
@@ -187,10 +187,10 @@
 							<p class="tip">这个class应用在[容器]上，自动调整栅格间距，保持两边间距相同。</p>
 						</div>
 						<div class="demo flex-column flex-between">
-							<div class="flex-item-4">等宽对齐</div>
-							<div class="flex-item-4">等宽对齐</div>
-							<div class="flex-item-4">等宽对齐</div>
-							<div class="flex-item-4">等宽对齐</div>
+							<div class="flex-item-3">等宽对齐</div>
+							<div class="flex-item-3">等宽对齐</div>
+							<div class="flex-item-3">等宽对齐</div>
+							<div class="flex-item-3">等宽对齐</div>
 						</div>
 						<div class="demo flex-row flex-between flex-center" style="height: 250px">
 							<div class="flex-item-3">等宽对齐</div>
@@ -205,10 +205,10 @@
 							<p class="tip">这个class应用在[容器]上，与等宽对齐相同，但最左、最右、最上、最下的间距比[栅格]之间的间距大一倍。</p>
 						</div>
 						<div class="demo flex-column flex-around">
-							<div class="flex-item-4">分散排列</div>
-							<div class="flex-item-4">分散排列</div>
-							<div class="flex-item-4">分散排列</div>
-							<div class="flex-item-4">分散排列</div>
+							<div class="flex-item-3">分散排列</div>
+							<div class="flex-item-3">分散排列</div>
+							<div class="flex-item-3">分散排列</div>
+							<div class="flex-item-3">分散排列</div>
 						</div>
 						<div class="demo flex-row flex-around flex-center" style="height: 300px">
 							<div class="flex-item-3">分散排列</div>
@@ -222,7 +222,7 @@
 							<span class="title">嵌套布局</span>
 						</div>
 						<div class="demo flex-column flex-center">
-							<div class="flex-item-12 flex-row">
+							<div class="flex-item-6 flex-row">
 								<div class="flex-item">flex-item</div>
 								<div class="flex-item">flex-item</div>
 							</div>
@@ -236,7 +236,7 @@
 				</div>
 				<div id="responsive" class="panel">
 					<h2>响应式</h2>
-					<p>flex-layout提供了基础的响应式功能，当分辨率小于某个阈值时，你可以指定：</p>
+					<p>css-flex-layout提供了基础的响应式功能，当分辨率小于某个阈值时，你可以指定：</p>
 					<ol>
 						<li>[容器]从横向排列变为竖向排列，并且[栅格]宽度为100%</li>
 						<li>隐藏指定[栅格]</li>
