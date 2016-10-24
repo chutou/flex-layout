@@ -2,8 +2,7 @@
 
 基于flexbox的栅格化布局库，提供更直观、丰富的布局方式。<br>
 
-#npm
-	npm install flex-layout
+[文档演示](https://github.com/chutou/flex-layout/example/index.html)
 
 #优势
 
@@ -34,5 +33,3 @@ flex-layout解决了css布局的不少问题:
 #License
 
 MIT
-
-[1]: https://github.com/chutou/flex-layout/
