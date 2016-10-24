@@ -1,4 +1,4 @@
-@flex-column: 24;
+@flex-column: 12;
 @import "flex";
 
 .flex-clearfix() {
@@ -43,6 +43,7 @@
 .flex-item {
 	/* float: left; */
 	.flex-grow(1);
+	clear: both;
 }
 
 // 递归生成栅格
@@ -145,7 +146,7 @@
 	display: none;
 }
 
-/*  @media (max-width: 992px) {
+  @media (max-width: 992px) {
 	.flex-md {
 		.flex-direction(column);
 		.build-align(row);
@@ -178,7 +179,7 @@
 	.flex-sm-show {
 		display: flex !important;
 	}
-}  */
+}  
 
 
 

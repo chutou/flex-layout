@@ -37,7 +37,12 @@ br {
 }
 
 .m-header {
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background-color: #fff;
+	width: 100%;
 	padding: 0 50px;
 	height: 80px;
 	border-bottom: solid 1px #e1e1e1;
@@ -66,9 +71,13 @@ br {
 .m-sidebar {
 	width: 270px;
 	background-color: #f8f8f8;
+	position: relative;
 }
 .m-nav {
 	padding-top: 20px;
+	position: fixed;
+	width: 270px;
+	top: 80px;
 }
 .m-nav a {
 	display: block;
@@ -86,6 +95,19 @@ br {
 
 .m-main {
 	flex: 1;
-	padding: 20px 40px 60px 40px;
+	padding: 100px 40px 60px 40px;
 	max-width: 760px;
+}
+
+@media (max-width: 768px) {
+	.m-header{
+		height: 60px;
+		overflow: hidden;
+	}
+	.m-main {
+		padding: 60px 10px;
+	}
+	.m-sidebar {
+		display: none;
+	}
 }
