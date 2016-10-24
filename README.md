@@ -2,7 +2,7 @@
 
 基于flexbox的栅格化布局库，提供更直观、丰富的布局方式。<br>
 
-[文档演示](https://github.com/chutou/flex-layout/example/index.html)
+[文档演示](http://codepen.io/chutou/pen/yakjNK)
 
 #npm install
 ```
