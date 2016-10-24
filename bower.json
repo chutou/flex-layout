@@ -1,0 +1,23 @@
+{
+  "name": "css-flex-layout",
+  "description": "css3 flexbox,layout",
+  "main": "./dist/flex-layout.css",
+  "authors": [
+    "chutou"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flexbox",
+    "css3",
+    "layout",
+    "grid"
+  ],
+  "homepage": "https://github.com/chutou/flex-layout",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

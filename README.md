@@ -8,6 +8,10 @@
 ```
 	npm install css-flex-layout
 ```
+#bower install
+```
+	bower install css-flex-layout
+```
 
 #优势
 
